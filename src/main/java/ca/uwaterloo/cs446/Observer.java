@@ -3,7 +3,9 @@ import subject.Subject;
 
 public abstract class Observer {
 
-    public abstract void Observer();
+    public Observer() {
+        
+    }
 
     public abstract void update(Subject sub);
 

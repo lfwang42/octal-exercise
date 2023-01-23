@@ -9,7 +9,8 @@ public class OctalObserver extends Observer  {
     }
 
     public void update(Subject sub) {
-        this.octValue = sub.getState().toOctalString();
+        int temp = sub.getState();
+        this.octValue = temp.toOctalString();
     }
 
     public String getValue() {

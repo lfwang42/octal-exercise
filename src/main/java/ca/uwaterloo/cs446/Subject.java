@@ -5,7 +5,7 @@ import java.util.ArrayList; // import the ArrayList class
 public abstract class Subject {
     private ArrayList<Observer> observers;
 
-    Subject() {
+    public Subject() {
         observers = new ArrayList<>();
     }
 
