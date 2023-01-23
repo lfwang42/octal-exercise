@@ -1,18 +1,18 @@
+package numbersubject;
+import subject.Subject;
 
 public class NumberSubject extends Subject {
     public int state;
-    
-    public void NumberSubject(state: int) {
+
+    public void NumberSubject(int state) {
         this.state = state;
     }
     
-    @Override 
     public int getState() {
         return this.state;
     }
 
-    @Override 
-    public void setState(state: int) {
+    public void setState(int state) {
         this.state = state;
     }
 }

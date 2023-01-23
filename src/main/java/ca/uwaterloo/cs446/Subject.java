@@ -1,5 +1,8 @@
+package subject;
+import observer.Observer;
+import java.util.ArrayList; // import the ArrayList class
 
-public class Subject {
+public abstract class Subject {
     private ArrayList<Observer> observers;
 
     Subject() {
@@ -18,10 +21,8 @@ public class Subject {
     }
 
 
-    public abstract int getState() {
-    }
+    public abstract int getState();
 
-    public abstract void setState(int s) {
-    }
+    public abstract void setState(int s);
 
 }
