@@ -1,7 +1,6 @@
 
 public class Subject {
     private ArrayList<Observer> observers;
-    private int state;
 
     Subject() {
         observers = new ArrayList<>();
@@ -14,17 +13,15 @@ public class Subject {
 
     public void sendNotice() {
         for (Observer obs : observers) {
-            obs.update();
+            obs.update(this);
         }
     }
 
 
-    public int getState() {
-        return state;
+    public abstract int getState() {
     }
 
-    public void setState(int s) {
-        state = s;
+    public abstract void setState(int s) {
     }
 
 }

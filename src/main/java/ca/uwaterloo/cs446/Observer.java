@@ -1,16 +1,15 @@
 
 public class Observer {
-    private String value;
 
-    Observer() {
-
-    }
-
-    public void update() {
+    public abstract void Observer() {
 
     }
 
-    public String getValue() {
+    public abstract void update(Subject sub) {
+
+    }
+
+    public abstract String getValue() {
 
     }
 
